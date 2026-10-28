@@ -1,6 +1,6 @@
 #  TaskPlanner - Planificador de Tareas
 
-## 🛠️ Tecnologías y Herramientas
+##  Tecnologías y Herramientas
 * **Frontend:** HTML5, CSS3, Bootstrap 5, JavaScript (Manipulación del DOM).
 * **Backend (Próximos Sprints):** Java, Spring Boot, C# .NET, Base de datos SQL.
 * **Control de Versiones:** Git y GitHub.
