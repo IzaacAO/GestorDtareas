@@ -18,7 +18,7 @@ Puedes consultar la planificación y el diseño visual de la aplicación en los 
 
 ##  Estado del Desarrollo
 * **Sprint 1 (Actual):** Planificación, creación del repositorio, diseño de wireframes en Figma, estructuración del tablero en Trello y maquetación de la interfaz base con Bootstrap.
-* **Próximos Sprints:** Lógica en JavaScript, consumo de APIs y desarrollo del Backend con Java/Spring Boot.
+
 
 ---
 <p align="center">Desarrollado con 💜 por <b>Isaac Alarcón Ospina</b></p>
