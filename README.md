@@ -11,7 +11,7 @@
 ## Enlaces del Proyecto
 Puedes consultar la planificación y el diseño visual de la aplicación en los siguientes enlaces:
 
-*  [Tablero de Trello - Gestión del Sprint](https://trello.com/) *(Actualiza aquí tu enlace de Trello)*
+*  [Tablero de Trello - Gestión del Sprint](https://trello.com/invite/b/6ae2545fdd741d925099ddc9/ATTI34efae98ccab70b9558a201ea935ecf544B0969E/gestordtareas) 
 * [Diseño y Wireframe en Figma](https://www.figma.com/site/S2I2nZdW4wgQB6uj1YO0Py/Sin-t%C3%ADtulo?node-id=0-1&p=f&t=vwU38aRIGAeOf4CB-0)
 
 ---
