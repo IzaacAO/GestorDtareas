@@ -1,0 +1,170 @@
+:root {
+    --rojo: #e83c41;
+    --rojo-fuerte: #ff003c;
+    --brillo: rgba(232, 60, 65, 0.4);
+    --borde: #3a2a26;
+    --texto: #e5e7eb;
+    --gris: #b0b6c0;
+    --dorado: #d4a017;
+    --verde: #84cc16;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--texto);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('darkFa.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.titulo {
+    font-family: 'Cinzel', serif;
+    color: var(--rojo-fuerte);
+    font-size: 2.6rem;
+    letter-spacing: 6px;
+    text-shadow: 0 0 20px var(--brillo);
+}
+
+header p {
+    color: var(--gris);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.card {
+    background-color: rgba(15, 15, 18, 0.6);
+    color: var(--texto);
+    border: 1px solid var(--borde);
+    border-radius: 20px;
+}
+
+.card-header {
+    background: transparent;
+    border-bottom: 2px solid var(--rojo-fuerte);
+}
+
+.card-header h4 {
+    font-family: 'Cinzel', serif;
+    letter-spacing: 3px;
+    font-size: 1.1rem;
+}
+
+.form-label {
+    color: var(--gris);
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.form-control,
+.form-select {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: 1px solid var(--borde);
+    border-radius: 12px;
+    padding: 12px 18px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border-color: var(--rojo);
+    box-shadow: 0 0 10px var(--brillo);
+}
+
+.form-control::placeholder {
+    color: #8b919c;
+    opacity: 1;
+}
+
+input[type="date"] {
+    color-scheme: dark;
+}
+
+.form-select option {
+    background-color: #17171a;
+    color: white;
+}
+
+.btn-primary {
+    background-color: #b91c1c;
+    border: 1px solid var(--rojo);
+    border-radius: 12px;
+    padding: 12px 18px;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: var(--rojo);
+    border: 1px solid var(--rojo-fuerte);
+    box-shadow: 0 0 15px var(--brillo);
+}
+
+.btn-success {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #1db954;
+    color: #1db954;
+}
+
+.btn-success:hover {
+    background-color: #1db954;
+    color: black;
+}
+
+.task-card {
+    background-color: rgba(0, 0, 0, 0.45);
+    border-left: 4px solid var(--rojo);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.task-card:hover {
+    background-color: rgba(34, 34, 39, 0.7);
+    box-shadow: 0 0 18px var(--brillo);
+    transform: translateX(4px);
+}
+
+.task-card .card-title {
+    font-family: 'Cinzel', serif;
+    font-size: 1.1rem;
+}
+
+.task-card .card-text {
+    color: #c9ced6;
+    font-size: 0.9rem;
+}
+
+.task-card .card-footer {
+    background: transparent;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.task-card .text-body-secondary {
+    color: var(--gris) !important;
+    font-size: 0.8rem;
+}
+
+.prioridad-alta  { border-left-color: var(--rojo-fuerte); }
+.prioridad-media { border-left-color: var(--dorado); }
+.prioridad-baja  { border-left-color: var(--verde); }
+
+.badge {
+    font-size: 0.68rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 0.45em 0.9em;
+    border: 1px solid;
+}
+
+.badge-alta       { background: rgba(255, 0, 60, 0.15);    color: #ff4d6d;        border-color: var(--rojo-fuerte); }
+.badge-media      { background: rgba(212, 160, 23, 0.15);  color: var(--dorado);   border-color: var(--dorado); }
+.badge-baja       { background: rgba(132, 204, 22, 0.15);  color: var(--verde);    border-color: var(--verde); }
+.badge-pendiente  { background: rgba(156, 163, 175, 0.12); color: var(--gris);     border-color: var(--gris); }
