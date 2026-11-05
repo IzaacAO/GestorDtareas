@@ -17,7 +17,7 @@ Puedes consultar la planificación y el diseño visual de la aplicación en los 
 ---
 
 ##  Estado del Desarrollo
-* **Sprint 1 (Actual):** Planificación, creación del repositorio, diseño de wireframes en Figma, estructuración del tablero en Trello, maquetación de la interfaz base con Bootstrap, Creación de tareas y formulario .
+* **Sprint 1 (Actual):** Planificación, creación del repositorio, diseño de wireframes en Figma, estructuración del tablero en Trello, maquetación de la interfaz base con Bootstrap, Creación de tareas, formulario, agregar tareas y avance de reproductor de musica.
 
 
 ---
