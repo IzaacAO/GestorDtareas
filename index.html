@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es" data-bs-theme="dark">
- 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +12,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="stilo.css">
 </head>
- 
+
 <body>
     <header class="container py-4">
         <div class="d-flex justify-content-between align-items-center">
@@ -24,54 +24,54 @@
                 Spotify
             </a>
         </div>
-         <div class="card mt-4">
-                    <div class="card-header">
-                        <h4 class="mb-0">MÚSICA</h4>
-                    </div>
-                    <div class="card-body">
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" id="spotifyEnlace"
-                                placeholder="Pega el enlace de Spotify">
-                            <button class="btn btn-success" id="spotifyBoton" type="button">Cargar</button>
-                        </div>
-                        <div id="spotifyReproductor">
-                            <iframe src="https://open.spotify.com/embed/album/7Lv6VzSqIz1sAssK2JUskG?utm_source=generator"
-                                width="100%" height="352" style="border:0; border-radius:12px;"
-                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-                        </div>
-                    </div>
+        <div class="card mt-4">
+            <div class="card-header">
+                <h4 class="mb-0">MÚSICA</h4>
+            </div>
+            <div class="card-body">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="spotifyEnlace" placeholder="Pega el enlace de Spotify">
+                    <button class="btn btn-success" id="spotifyBoton" type="button">Cargar</button>
                 </div>
+                <div id="spotifyReproductor">
+                    <iframe src="https://open.spotify.com/embed/album/7Lv6VzSqIz1sAssK2JUskG?utm_source=generator"
+                        width="100%" height="352" style="border:0; border-radius:12px;"
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                </div>
+            </div>
+        </div>
     </header>
- 
+
     <main class="container">
         <div class="row g-4">
- 
+
+            <!-- ===== FORMULARIO ===== -->
             <section class="col-lg-4">
                 <div class="card">
                     <div class="card-header">
                         <h4 class="mb-0">REGISTRAR TAREA</h4>
                     </div>
                     <div class="card-body">
- 
+
                         <div id="erroralerta" class="alert alert-danger d-none" role="alert"></div>
- 
+
                         <form id="tareasform" novalidate>
- 
+
                             <div class="mb-3">
                                 <label for="titulo" class="form-label">Título de la tarea</label>
                                 <input type="text" class="form-control" id="titulo" placeholder="Ej: Ir al GYM">
                             </div>
- 
+
                             <div class="mb-3">
                                 <label for="descripcion" class="form-label">Descripción</label>
                                 <textarea class="form-control" id="descripcion" rows="3"></textarea>
                             </div>
- 
+
                             <div class="mb-3">
                                 <label for="fecha" class="form-label">Fecha de entrega</label>
                                 <input type="date" class="form-control" id="fecha">
                             </div>
- 
+
                             <div class="mb-3">
                                 <label for="estado" class="form-label">Estado</label>
                                 <select class="form-select" id="estado">
@@ -81,7 +81,7 @@
                                     <option value="completada">Completada</option>
                                 </select>
                             </div>
- 
+
                             <div class="mb-3">
                                 <label for="prioridad" class="form-label">Prioridad</label>
                                 <select class="form-select" id="prioridad">
@@ -91,22 +91,21 @@
                                     <option value="baja">Baja</option>
                                 </select>
                             </div>
- 
+
                             <button type="submit" class="btn btn-primary w-100">Enviar</button>
- 
+
                         </form>
                     </div>
                 </div>
- 
             </section>
- 
+
             <section class="col-lg-8">
                 <div class="card">
                     <div class="card-header">
                         <h4 class="mb-0">TAREAS</h4>
                     </div>
                     <div class="card-body" id="lista-tareas">
- 
+
                         <div class="card task-card prioridad-alta mb-3">
                             <div class="card-body">
                                 <div class="d-flex justify-content-between align-items-start">
@@ -117,52 +116,14 @@
                             </div>
                             <div class="card-footer d-flex justify-content-between align-items-center">
                                 <small class="text-body-secondary">Entrega: 15/11/2026</small>
-                                <span class="badge badge-pendiente">Pendiente</span>
-                            </div>
-                        </div>
- 
-                        <div class="card task-card prioridad-media mb-3">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between align-items-start">
-                                    <h5 class="card-title">Ir al gym</h5>
-                                    <span class="badge badge-media">Media</span>
+                                <div class="d-flex align-items-center gap-2">
+                                    <span class="badge badge-pendiente estado-badge">Pendiente</span>
+                                    <button type="button" class="btn btn-sm btn-toggle">Completar</button>
+                                    <button type="button" class="btn btn-sm btn-eliminar">Eliminar</button>
                                 </div>
-                                <p class="card-text">Rutina de piernas y cardio durante una hora.</p>
                             </div>
-                            <div class="card-footer d-flex justify-content-between align-items-center">
-                                <small class="text-body-secondary">Entrega: 05/11/2026</small>
-                                <span class="badge badge-progreso">En progreso</span>
-                            </div>
-                        </div>
- 
-                        <div class="card task-card prioridad-baja mb-3">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between align-items-start">
-                                    <h5 class="card-title">Contenido de la página</h5>
-                                    <span class="badge badge-baja">Baja</span>
-                                </div>
-                                <p class="card-text">Redactar los textos y elegir las imágenes del sitio.</p>
-                            </div>
-                            <div class="card-footer d-flex justify-content-between align-items-center">
-                                <small class="text-body-secondary">Entrega: 20/11/2026</small>
-                                <span class="badge badge-completada">Completada</span>
-                            </div>
-                        </div>
- 
-                        <div class="card task-card prioridad-alta mb-3">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between align-items-start">
-                                    <h5 class="card-title">Estudiar para el examen de bases de datos</h5>
-                                    <span class="badge badge-alta">Alta</span>
-                                </div>
-                                <p class="card-text">Repasar modelo entidad-relación y consultas SQL básicas.</p>
-                            </div>
-                            <div class="card-footer d-flex justify-content-between align-items-center">
-                                <small class="text-body-secondary">Entrega: 08/11/2026</small>
-                                <span class="badge badge-progreso">En progreso</span>
-                            </div>
-                        </div>
- 
+                        </div>                   
+
                         <div class="card task-card prioridad-media mb-0">
                             <div class="card-body">
                                 <div class="d-flex justify-content-between align-items-start">
@@ -173,19 +134,22 @@
                             </div>
                             <div class="card-footer d-flex justify-content-between align-items-center">
                                 <small class="text-body-secondary">Entrega: 12/11/2026</small>
-                                <span class="badge badge-pendiente">Pendiente</span>
+                                <div class="d-flex align-items-center gap-2">
+                                    <span class="badge badge-pendiente estado-badge">Pendiente</span>
+                                    <button type="button" class="btn btn-sm btn-toggle">Completar</button>
+                                    <button type="button" class="btn btn-sm btn-eliminar">Eliminar</button>
+                                </div>
                             </div>
                         </div>
- 
+
                     </div>
                 </div>
             </section>
- 
+
         </div>
     </main>
- 
+
     <script src="app.js"></script>
 </body>
- 
+
 </html>
- 

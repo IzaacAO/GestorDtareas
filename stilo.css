@@ -168,3 +168,43 @@ input[type="date"] {
 .badge-media      { background: rgba(212, 160, 23, 0.15);  color: var(--dorado);   border-color: var(--dorado); }
 .badge-baja       { background: rgba(132, 204, 22, 0.15);  color: var(--verde);    border-color: var(--verde); }
 .badge-pendiente  { background: rgba(156, 163, 175, 0.12); color: var(--gris);     border-color: var(--gris); }
+
+
+.badge-progreso   { background: rgba(59, 130, 246, 0.15); color: var(--rojo);     border-color: var(--rojo-fuerte); }
+.badge-completada { background: rgba(132, 204, 22, 0.15); color: var(--verde); border-color: var(--verde); }
+
+
+.btn-toggle {
+    background-color: transparent;   
+    border: 1px solid var(--verde);  
+    color: var(--verde);             
+    border-radius: 8px;              
+    font-size: 0.75rem;             
+}
+
+.btn-toggle:hover {
+    background-color: var(--verde);  
+    color: black;                   
+}
+
+.task-card.completada {
+    border-left-color: var(--verde); 
+    opacity: 0.7;               
+}
+
+.task-card.completada .card-title {
+    text-decoration: line-through;  
+    color: var(--gris);             
+}
+
+.btn-sm.btn-eliminar {
+    background-color: transparent;   
+    border: 1px solid var(--rojo);  
+    color: var(--rojo);             
+    border-radius: 8px;              
+    font-size: 0.75rem;             
+}
+.btn-sm.btn-eliminar:hover {
+    background-color: var(--rojo);  
+    color: black;                   
+}
