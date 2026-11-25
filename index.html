@@ -99,56 +99,20 @@
                 </div>
             </section>
 
+            <!-- ===== LISTA DE TAREAS (la dibuja TaskManager.render()) ===== -->
             <section class="col-lg-8">
                 <div class="card">
                     <div class="card-header">
                         <h4 class="mb-0">TAREAS</h4>
                     </div>
-                    <div class="card-body" id="lista-tareas">
-
-                        <div class="card task-card prioridad-alta mb-3">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between align-items-start">
-                                    <h5 class="card-title">Diseño de página de One Piece</h5>
-                                    <span class="badge badge-alta">Alta</span>
-                                </div>
-                                <p class="card-text">Crear la maqueta de la página con HTML y Bootstrap.</p>
-                            </div>
-                            <div class="card-footer d-flex justify-content-between align-items-center">
-                                <small class="text-body-secondary">Entrega: 15/11/2026</small>
-                                <div class="d-flex align-items-center gap-2">
-                                    <span class="badge badge-pendiente estado-badge">Pendiente</span>
-                                    <button type="button" class="btn btn-sm btn-toggle">Completar</button>
-                                    <button type="button" class="btn btn-sm btn-eliminar">Eliminar</button>
-                                </div>
-                            </div>
-                        </div>                   
-
-                        <div class="card task-card prioridad-media mb-0">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between align-items-start">
-                                    <h5 class="card-title">Comprar regalo de cumpleaños</h5>
-                                    <span class="badge badge-media">Media</span>
-                                </div>
-                                <p class="card-text">Buscar un regalo para el cumpleaños de mi hermana.</p>
-                            </div>
-                            <div class="card-footer d-flex justify-content-between align-items-center">
-                                <small class="text-body-secondary">Entrega: 12/11/2026</small>
-                                <div class="d-flex align-items-center gap-2">
-                                    <span class="badge badge-pendiente estado-badge">Pendiente</span>
-                                    <button type="button" class="btn btn-sm btn-toggle">Completar</button>
-                                    <button type="button" class="btn btn-sm btn-eliminar">Eliminar</button>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
+                    <div class="card-body" id="lista-tareas"></div>
                 </div>
             </section>
 
         </div>
     </main>
 
+    <script src="TaskManager.js"></script>
     <script src="app.js"></script>
 </body>
 
